@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/main.css" />
+  <title>Lego Collection</title>
+</head>
+<body>
+  
+  <%- include('partials/navbar', {page: '/about'}) %>
+
+  <div class="navbar bg-base-100">
+    <div class="flex-1">
+      <a href="/" class="btn btn-ghost normal-case text-xl">Lego Collection</a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1">
+        <li><a class="active" href="/about">About Me</a></li>
+        <li>
+          <details>
+            <summary>Themes</summary>
+            <ul class="p-2 w-32 bg-base-100 right-0">
+              <li><a href="https://www.lego.com/en-us/themes/architecture">Architecture</a></li>
+              <li><a href="https://www.lego.com/en-us/themes/lego-batman-sets">Batmansets</a></li>
+              <li><a href="https://www.lego.com/en-us/themes/brickheadz">Brickheadz</a></li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </div>
+    <div class="dropdown">
+      <label tabindex="0" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+      </label>
+      <ul tabindex="0" class="menu menu-sm dropdown-content right-0 mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+        <li><a class="active" href="/about">About Me</a></li>
+        <li>
+          <details>
+            <summary>Themes</summary>
+            <ul class="p-2 w-32 bg-base-100 right-0">
+              <li><a href="https://www.lego.com/en-us/themes/architecture">Architecture</a></li>
+              <li><a href="https://www.lego.com/en-us/themes/lego-batman-sets">Batmansets</a></li>
+              <li><a href="https://www.lego.com/en-us/themes/brickheadz">Brickheadz</a></li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="container mx-auto p-4 lg:px-0">
+    <!-- Hero Section -->
+    <div class="hero py-8 bg-base-200 rounded-lg">
+      <div class="hero-content text-center">
+        <div class="max-w-md">
+          <h1 class="text-5xl font-bold">About Me</h1>
+          <p class="py-6"></p>
+        </div>
+      </div>
+    </div>
+    <!-- Grid Section -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mt-8">
+      <div class="w-full">
+        <img class="w-full h-96 rounded-lg" src="https://plus.unsplash.com/premium_photo-1671429290897-5b29d44639c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2944&q=80" />
+      </div>
+      <div class="w-full">
+        <p class="prose">
+          <p>My name is Prisha Pathak and I'm currently studying at College.</p>
+
+        <p>Currently I am pursuinng in computer programming and analyisis course. Welcome to my website please explore and give your reviews through feedback.</p>
+
+        </p>
+      </div>      
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
